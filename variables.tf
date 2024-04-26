@@ -5,15 +5,3 @@ variable "site_name" {
 variable "fastly_api_key" {
   type = string
 }
-
-variable "sigsci_corp" {
-  type = string
-}
-
-variable "sigsci_email" {
-  type = string
-}
-
-variable "sigsci_token" {
-  type = string
-}

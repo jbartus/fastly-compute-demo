@@ -13,12 +13,8 @@ flowchart LR
 
 # pre-reqs
 - a fastly account with the following feature flags enabled
-  - `security_ui`
   - `secret_store`
-  - `io_entitlement`
-  - `rate_limiting` with [hctl commands](https://fastly.atlassian.net/wiki/spaces/CustomerEngineering/pages/50804572197/Rate+Limiting+Enablement#Heavenly-commands%3A)
   - also, you must navigate to the compute tab in the fastly web interface and enable your compute trial, if you haven't already, by deploying any compute service
-- a sigsci account (corp)
 
 # howto
 ## first time setup
@@ -45,7 +41,6 @@ chose one of the following three options for where to run this from
     `fastly profile create`  
 - click on the file named `terraform.tfvars` in the left menu and populate its values
   - use the same fastly api key from the cli (`fastly profile token`)
-  - populate the three `sigsci_` variables ([see here for how to create an api key](https://docs.fastly.com/signalsciences/developer/using-our-api/#managing-api-access-tokens))
 
 ## test loop
 - `terraform apply`
