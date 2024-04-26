@@ -18,8 +18,3 @@ output "manage" {
 output "dash" {
   value = "https://dashboard.signalsciences.net/corps/${var.sigsci_corp}/sites/${var.site_name}?dashboardId=000000000000000000000001&from=-1h"
 }
-
-output "origin_ip" {
-  description = "public IP of the origin VM"
-  value       = google_compute_instance.demo_origin_instance.network_interface.0.access_config.0.nat_ip
-}
