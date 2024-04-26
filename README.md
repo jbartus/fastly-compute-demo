@@ -1,4 +1,5 @@
 # what is this
+an example repo to learn and show some simple uses cases for fastly's compute service
 
 # what does it do
 - deploys a javascript compute@edge application that uses geoip data, a secret-store, and makes an api call
